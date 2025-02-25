@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+        }
+        header {
+            padding: 20px;
+            font-size: 2em;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+        .bucket-list {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            font-size: 1.5em;
+            padding: 10px;
+            transition: transform 0.3s, color 0.3s;
+        }
+        li:hover {
+            transform: scale(1.1);
+            color: #ffeb3b;
+        }
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+        footer {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌟 My Bucket List</h1>
+    </header>
+    
+    <main>
+        <section class="bucket-list">
+            <h2>Things I Want to Do</h2>
+            <ul>
+                <li><i class="fas fa-plane"></i> Travel to Japan</li>
+                <li><i class="fas fa-mountain"></i> Hike the Himalayas</li>
+                <li><i class="fas fa-book"></i> Write a Novel</li>
+                <li class="completed"><i class="fas fa-check-circle"></i> Learn to Play Guitar</li>
+                <li><i class="fas fa-camera"></i> Start a Photography Blog</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 My Bucket List | Designed with ❤️</p>
+    </footer>
+</body>
+</html>
